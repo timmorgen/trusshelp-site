@@ -10,3 +10,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.news-item {
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  font-weight: 600;
+}
+
+.news-text {
+  margin-left: 0.5rem;
+}
