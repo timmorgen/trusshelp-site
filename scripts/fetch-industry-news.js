@@ -5,7 +5,7 @@ const Parser = require("rss-parser");
 const parser = new Parser();
 
 const MAX_ITEMS = 5;
-const HOURS = 720;
+const HOURS = 120;
 const NOW = Date.now();
 const CUTOFF = NOW - HOURS * 60 * 60 * 1000;
 
