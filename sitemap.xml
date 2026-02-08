@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://trusshelp.com/</loc>
   </url>
-
   <url>
     <loc>https://trusshelp.com/news/</loc>
   </url>
-
+  
   <url>
     <loc>https://trusshelp.com/news/2026-02-truss-wind-repair/</loc>
     <lastmod>2026-02-01</lastmod>
@@ -20,4 +18,3 @@
   </url>
 
 </urlset>
-
