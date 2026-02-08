@@ -2,10 +2,12 @@ name: Generate RSS and Sitemap
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - "news/news.json"
-      - "scripts/**"
-      - "data/**"
+      - news/news.json
+      - data/industry-news.json
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,11 +25,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Fetch industry news
-        run: |
-          npm install rss-parser
-          node scripts/fetch-industry-news.js
-
       - name: Generate RSS and sitemap
         run: node scripts/generate-feeds.js
 
@@ -35,6 +32,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add rss.xml sitemap.xml news/index.html data/industry-news.json
-          git commit -m "Auto-generate feeds and industry news" || echo "No changes"
+          git add rss.xml sitemap.xml
+          git commit -m "Auto-generate RSS and sitemap" || echo "No changes"
           git push
