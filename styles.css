@@ -22,3 +22,20 @@ a:hover {
 .news-text {
   margin-left: 0.5rem;
 }
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-item {
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  font-weight: 600;
+}
+
+.news-text {
+  margin-left: 0.5rem;
+}
