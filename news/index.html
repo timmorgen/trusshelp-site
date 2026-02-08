@@ -9,7 +9,18 @@
 
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+
+  <script>
+  const list = document.querySelector(".news-list");
+  const items = Array.from(list.children);
+
+  items
+    .sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date))
+    .forEach(item => list.appendChild(item));
+</script>
+
+  
+  <body>
 
   <!-- Header include -->
   <div id="site-header"></div>
@@ -27,19 +38,25 @@
 
       <!-- COPY THIS BLOCK TO ADD A NEW ITEM -->
 
-      <li class="news-item">
-        <div class="news-date">February 2026</div>
-        <div class="news-text">
-          Advances in truss repair guidance following severe wind events.
-        </div>
-      </li>
+     <li class="news-item" data-date="2026-02-01">
+      <div class="news-date">February 2026</div>
+      <div class="news-text">
+        <a href="/news/2026-02-advances-in-truss-repair/">
+         Advances in truss repair guidance following severe wind events
+       </a>
+      </div>
+    </li>
 
-      <li class="news-item">
-        <div class="news-date">January 2026</div>
-        <div class="news-text">
-          Updates from industry associations on metal plate connected wood trusses.
-        </div>
-      </li>
+
+     <li class="news-item" data-date="2026-01-01">
+      <div class="news-date">January 2026</div>
+      <div class="news-text">
+        <a href="/news/2026-01-industry-association-updates/">
+          Updates from industry associations on metal plate connected wood trusses
+       </a>
+     </div>
+    </li>
+
 
     </ul>
   </main>
@@ -51,3 +68,4 @@
   <script src="/scripts/include.js"></script>
 </body>
 </html>
+
