@@ -1,1 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>TrussHelp Industry News</title>
+    <link>https://trusshelp.com/news/</link>
+    <description>Industry news related to wood trusses and structural building components.</description>
+    <language>en-us</language>
+
+    <item>
+      <title>Advances in Truss Repair Guidance Following Severe Wind Events</title>
+      <link>https://trusshelp.com/news/2026-02-truss-wind-repair/</link>
+      <guid>https://trusshelp.com/news/2026-02-truss-wind-repair/</guid>
+      <pubDate>Sat, 01 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Summary of updated guidance following severe wind events.</description>
+    </item>
+
+    <item>
+      <title>Updates from Industry Associations on Metal Plate Connected Wood Trusses</title>
+      <link>https://trusshelp.com/news/2026-01-plate-truss-updates/</link>
+      <guid>https://trusshelp.com/news/2026-01-plate-truss-updates/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Industry association updates related to metal plate connected wood trusses.</description>
+    </item>
+
+  </channel>
+</rss>
 
