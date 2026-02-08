@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>Industry News | TrussHelp</title>
-  <meta name="description" content="Industry news and updates related to wood trusses and structural building components.">
-  <link rel="stylesheet" href="/styles.css">
+  <title>Industry News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 1100px; margin: 0 auto; padding: 20px; }
+    h1 { margin-bottom: 10px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+    .controls select, .controls input { padding: 6px; }
+    .news-item { border-bottom: 1px solid #ddd; padding: 16px 0; }
+    .headline { font-size: 1.1em; font-weight: bold; }
+    .meta { font-size: 0.85em; color: #666; margin-top: 4px; }
+    .meta a { margin-left: 6px; }
+  </style>
 </head>
 <body>
 
-  <div id="site-header"></div>
+<h1>Industry News</h1>
 
-  <main class="container">
-    <h1>Industry News</h1>
+<div class="controls">
+  <select id="sourceFilter">
+    <option value="">All Sources</option>
+  </select>
 
-    <p>
-      Curated news and updates relevant to the structural building
-      component and wood truss industry.
-    </p>
-  
-    <ul class="news-list">
+  <select id="entityFilter">
+    <option value="">All Entities</option>
+  </select>
 
-  <!-- COPY THIS BLOCK TO ADD A NEW ITEM -->
+  <select id="topicFilter">
+    <option value="">All Topics</option>
+  </select>
 
-  <li class="news-item">
-    <div class="news-date">February 2026</div>
-    <div class="news-text">
-      Advances in truss repair guidance following severe wind events.
-    </div>
-  </li>
+  <input type="text" id="searchInput" placeholder="Search headlines or excerpts">
+</div>
 
-  <li class="news-item">
-    <div class="news-date">January 2026</div>
-    <div class="news-text">
-      Updates from industry associations on metal plate connected wood trusses.
-    </div>
-  </li>
-</ul>
-    
-  </main>
+<div id="newsContainer"></div>
 
-<div id="site-footer"></div>
-
-<script src="/scripts/include.js"></script>
+<script src="news.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
