@@ -1,1 +1,31 @@
+name: Generate RSS and Sitemap
+
+on:
+  push:
+    paths:
+      - "news/news.json"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate RSS and sitemap
+        run: node scripts/generate-feeds.js
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add rss.xml sitemap.xml
+          git commit -m "Auto-generate RSS and sitemap" || echo "No changes"
+          git push
 
