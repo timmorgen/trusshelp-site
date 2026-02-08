@@ -1,3 +1,13 @@
+{
+  "title": "SYSTEM TEST – Do Not Keep",
+  "slug": "2099-12-system-test",
+  "date": "2099-12-01",
+  "summary": "This is a fake article used to test automation.",
+  "source": "https://www.sbcacomponents.com/"
+}
+
+
+
 [
   {
     "title": "Advances in Truss Repair Guidance Following Severe Wind Events",
@@ -14,3 +24,4 @@
     "source": "https://www.sbcacomponents.com/" 
   }
 ]
+
