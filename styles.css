@@ -130,4 +130,26 @@ p {
   font-size: 0.85rem;
   color: #555;
 }
+.site-footer {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+  position: static !important;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  background: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 
